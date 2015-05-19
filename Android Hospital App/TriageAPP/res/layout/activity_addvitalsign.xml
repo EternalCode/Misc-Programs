@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddVitalsignActivity" >
+
+   <Button
+        android:id="@+id/A_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/Logout"
+        android:onClick="BackToLogin" />
+   
+   <ScrollView
+       android:id="@+id/scrollview1"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp">
+ 
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/A_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/Temp" />
+
+        <EditText
+            android:id="@+id/A_bloodp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/BloodP" />
+
+        <EditText
+            android:id="@+id/A_heartr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/HeartR" />
+
+        <EditText
+            android:id="@+id/A_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/VitalsignTime" />
+
+    </LinearLayout>
+	</ScrollView>
+
+   <TextView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/A_patientname"
+       android:layout_below="@+id/add_vitalsign"
+       android:layout_marginLeft="82dp"
+       android:text="@string/To" />
+
+   <Button
+       android:id="@+id/A_back"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/A_logout"
+       android:text="@string/Back"
+       android:onClick="BackToMenu" />
+
+   <EditText
+       android:id="@+id/A_patientname"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/textView1"
+       android:layout_centerHorizontal="true"
+       android:ems="10"
+       android:hint="@string/PatientName" />
+
+   <Button
+       android:id="@+id/add_vitalsign"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/scrollview1"
+       android:layout_below="@+id/scrollview1"
+       android:layout_marginTop="41dp"
+       android:gravity="center"
+       android:onClick="SubmitToPatient"
+       android:text="@string/AddVitalSign" />
+
+</RelativeLayout>

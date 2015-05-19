@@ -1,0 +1,117 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=11032, tid=3080
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_40-b43) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.0-b56 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000289e800):  JavaThread "Unknown thread" [_thread_in_vm, id=3080, stack(0x0000000002940000,0x0000000002a40000)]
+
+Stack: [0x0000000002940000,0x0000000002a40000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000289e800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=3080, stack(0x0000000002940000,0x0000000002a40000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.009 loading class 0x000000000b590760 done
+Event: 0.009 loading class 0x000000000b590180 done
+Event: 0.009 loading class 0x000000000b590160
+Event: 0.009 loading class 0x000000000b598260
+Event: 0.009 loading class 0x000000000b598260 done
+Event: 0.009 loading class 0x000000000b598290
+Event: 0.009 loading class 0x000000000b598290 done
+Event: 0.009 loading class 0x000000000b5982c0
+Event: 0.009 loading class 0x000000000b5982c0 done
+Event: 0.009 loading class 0x000000000b590160 done
+
+
+Dynamic libraries:
+0x000000013f6c0000 - 0x000000013f6f3000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x00000000777e0000 - 0x0000000077989000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00000000775c0000 - 0x00000000776df000 	C:\Windows\system32\kernel32.dll
+0x000007fefd760000 - 0x000007fefd7cb000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefdc00000 - 0x000007fefdcdb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefdb60000 - 0x000007fefdbff000 	C:\Windows\system32\msvcrt.dll
+0x000007fefe520000 - 0x000007fefe53f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefe3f0000 - 0x000007fefe51d000 	C:\Windows\system32\RPCRT4.dll
+0x00000000776e0000 - 0x00000000777da000 	C:\Windows\system32\USER32.dll
+0x000007fefde30000 - 0x000007fefde97000 	C:\Windows\system32\GDI32.dll
+0x000007fefe570000 - 0x000007fefe57e000 	C:\Windows\system32\LPK.dll
+0x000007fefda90000 - 0x000007fefdb59000 	C:\Windows\system32\USP10.dll
+0x000007fefc830000 - 0x000007fefca24000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefddb0000 - 0x000007fefde21000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefe540000 - 0x000007fefe56e000 	C:\Windows\system32\IMM32.DLL
+0x000007fefe2e0000 - 0x000007fefe3e9000 	C:\Windows\system32\MSCTF.dll
+0x000007fefd580000 - 0x000007fefd5bc000 	C:\Windows\system32\nvinitx.dll
+0x000000000f000000 - 0x000000000f006000 	C:\Program Files\NVIDIA Corporation\CoProcManager\_etoured.dll
+0x000007fef67d0000 - 0x000007fef6814000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvd3d9wrapx.dll
+0x000007fefe580000 - 0x000007fefe757000 	C:\Windows\system32\SETUPAPI.dll
+0x000007fefd7d0000 - 0x000007fefd806000 	C:\Windows\system32\CFGMGR32.dll
+0x000007feff550000 - 0x000007feff627000 	C:\Windows\system32\OLEAUT32.dll
+0x000007fefe030000 - 0x000007fefe233000 	C:\Windows\system32\ole32.dll
+0x000007fefd9c0000 - 0x000007fefd9da000 	C:\Windows\system32\DEVOBJ.dll
+0x000007fef6780000 - 0x000007fef67c2000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvdxgiwrapx.dll
+0x0000000071750000 - 0x0000000071821000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x0000000068110000 - 0x00000000688d9000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x000007fef21d0000 - 0x000007fef21d9000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefdd60000 - 0x000007fefddad000 	C:\Windows\system32\WS2_32.dll
+0x000007fefdec0000 - 0x000007fefdec8000 	C:\Windows\system32\NSI.dll
+0x000007fefa700000 - 0x000007fefa73b000 	C:\Windows\system32\WINMM.dll
+0x00000000779b0000 - 0x00000000779b7000 	C:\Windows\system32\PSAPI.DLL
+0x00000000721b0000 - 0x00000000721bf000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x0000000072100000 - 0x0000000072128000 	C:\Program Files\Java\jre7\bin\java.dll
+0x0000000072190000 - 0x00000000721a5000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\JAVA Projects\adt-bundle-windows-x86_64-20130911\sdk\platforms\android-18\android.jar 
+java_command: access_manager.main
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\ThinkPad\Bluetooth Software\syswow64;C:\Program Files\Broadcom\WHL\;C:\Program Files\Broadcom\WHL\syswow64;C:\Program Files\Broadcom\WHL\SysWow64\;C:\Program Files\Broadcom\WHL\SysWow64\syswow64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files\Common Files\Lenovo;C:\Program Files (x86)\Windows Live\Shared;C:\SWTOOLS\ReadyApps;C:\Program Files (x86)\Intel\Services\IPT\;C:\Program Files (x86)\Symantec\VIP Access Client\;C:\Program Files (x86)\Common Files\Lenovo;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\SlikSvn\bin;C:\Program Files\TortoiseSVN\bin
+USERNAME=Kai
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 8269040k(3691276k free), swap 16536216k(10388508k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.0-b56) for windows-amd64 JRE (1.7.0_40-b43), built on Aug 26 2013 22:38:32 by "java_re" with unknown MS VC++:1600
+
+time: Sat Nov 23 18:34:24 2013
+elapsed time: 0 seconds
+

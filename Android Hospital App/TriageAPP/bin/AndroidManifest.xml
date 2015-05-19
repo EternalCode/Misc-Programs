@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.triageapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.triageapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.triageapp.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.triageapp.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="com.example.triageapp.AddNewActivity"
+            android:label="@string/title_activity_add_new" >
+        </activity>
+        <activity
+            android:name="com.example.triageapp.AddVitalsignActivity"
+            android:label="@string/title_activity_add_vitalsign" >
+        </activity>
+        <activity
+            android:name="com.example.triageapp.PhysicianMenuActivity"
+            android:label="@string/title_activity_physician_menu" >
+        </activity>
+        <activity
+            android:name="com.example.triageapp.LookUpPatientActivity"
+            android:label="@string/title_activity_look_up_patient" >
+        </activity>
+        <activity
+            android:name="com.example.triageapp.AccessPatientsListActivity"
+            android:label="@string/title_activity_access_patients_list" >
+        </activity>
+    </application>
+
+</manifest>

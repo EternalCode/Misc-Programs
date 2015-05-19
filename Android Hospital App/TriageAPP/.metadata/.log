@@ -1,0 +1,24 @@
+!SESSION 2013-11-13 15:28:37.172 -----------------------------------------------
+eclipse.buildId=v22.2.0-822323
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
+Framework arguments:  -product com.android.ide.eclipse.adt.package.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.android.ide.eclipse.adt.package.product
+
+!ENTRY org.eclipse.team.svn.core.svnnature 4 0 2013-11-13 15:29:07.176
+!MESSAGE SVN: 'org.eclipse.team.svn.core.discovery.model.RemoteBundleDiscoveryStrategy$DownloadBundleJob' operation finished with error
+!SUBENTRY 1 org.eclipse.team.svn.core.svnnature 4 0 2013-11-13 15:29:07.176
+!MESSAGE SVN: 'org.eclipse.team.svn.core.discovery.model.RemoteBundleDiscoveryStrategy$DownloadBundleJob' operation finished with error: Cannot download bundle at http://community.polarion.com/projects/subversive/download/eclipse/3.0/discovery/org.eclipse.team.svn.discovery_1.0.0.I20130122-1700.jar
+!STACK 0
+java.lang.Exception: Cannot download bundle at http://community.polarion.com/projects/subversive/download/eclipse/3.0/discovery/org.eclipse.team.svn.discovery_1.0.0.I20130122-1700.jar
+	at org.eclipse.team.svn.core.discovery.model.RemoteBundleDiscoveryStrategy$DownloadBundleJob.exec(RemoteBundleDiscoveryStrategy.java:159)
+	at org.eclipse.team.svn.core.discovery.model.RemoteBundleDiscoveryStrategy.performDiscovery(RemoteBundleDiscoveryStrategy.java:88)
+	at org.eclipse.team.svn.core.discovery.model.ConnectorDiscovery.performDiscovery(ConnectorDiscovery.java:108)
+	at org.eclipse.team.svn.ui.discovery.wizards.ConnectorDiscoveryWizardMainPage$16.run(ConnectorDiscoveryWizardMainPage.java:1172)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: java.io.IOException: Unable to create temporary file
+	at java.io.File$TempDirectory.generateFile(Unknown Source)
+	at java.io.File.createTempFile(Unknown Source)
+	at org.eclipse.team.svn.core.discovery.model.RemoteBundleDiscoveryStrategy$DownloadBundleJob.exec(RemoteBundleDiscoveryStrategy.java:142)
+	... 4 more
